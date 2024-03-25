@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Microsoft Yahei","微软雅黑";
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+main{
+	clear: both;
+	height: 600px;
+	position: relative;
+	background-color:#FAFAFA;
+	padding: 10px;
+}
+
+.right{
+	width: 600px;
+	float:left;
+}
+.right h3{
+	width: 230px;
+	height: 30px;
+	background-color:dodgerblue;
+	color: white;
+	text-align: center;
+}
+span{
+	color: red;
+}
+p{
+	line-height: 2em;
+}
+form{
+	margin-top: 10px;
+	position: relative;
+/*	border: 1px solid blue;*/
+	height: 135px;
+	box-shadow: -1px 0 1px gray;
+}
+form input{
+	width: 180px;
+}
+form ol{
+	margin-top: 30px;
+	margin-left: 3px;
+}
+form ol li{
+	margin-bottom: 20px;
+}
+#dl{
+	display: block;
+	width: 150px;
+	height: 49px;
+	background:dodgerblue;
+	color:white;
+	border-radius:15px;
+	text-align: center;
+	line-height: 2em;
+	font-size: 22px;
+	position: absolute;
+	right:170px;
+	top:60px;
+}
+#zc{
+	display: block;
+	width: 150px;
+	height: 49px;
+	background:dodgerblue;
+	color:white;
+	border-radius:15px;
+	text-align: center;
+	line-height: 2em;
+	font-size: 22px;
+	position: absolute;
+	right:10px;
+	top:60px;
+}
+form a:hover{
+	background:blue;
+	color:white;
+	text-align: center;
+}

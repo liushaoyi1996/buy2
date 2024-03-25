@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.buy.mapper.buyMapper">
+	<select id="dl" resultType="int" parameterType="java.util.Map">
+		select COUNT(*) from user where name=#{name} and pwd=#{pwd}
+	</select>
+
+	<insert id="zhuce" parameterType="java.util.Map">
+		INSERT INTO user(name,pwd) VALUE(#{name},#{pwd});
+	</insert>
+
+	<select id="se" resultType="car" parameterType="String">
+		select * from car
+	</select>
+
+	<insert id="addsp"  parameterType="java.util.Map">
+		INSERT INTO car(name,sum,money) VALUE(#{name},#{sum},#{money});
+	</insert>
+
+	<update id="upm"  parameterType="java.util.Map">
+		update car set name=#{name2},sum=#{sum},money=#{money} where name=#{name1}
+	</update>
+
+	<delete id="de"  parameterType="java.util.Map">
+		DELETE FROM car WHERE name=#{name};
+	</delete>
+
+</mapper>
